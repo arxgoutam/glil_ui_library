@@ -38,3 +38,8 @@ https://cdn.jsdelivr.net/npm/my-ui-library@1.0.0/dist/style.min.css
 
 
 This structure will help you build and maintain a lightweight UI component library like Bootstrap but with a simpler, modern approach. Need help with a specific part? 🚀
+
+const getAllUser = () => {
+	const {user_id, username, email} = req.body;
+	
+}
