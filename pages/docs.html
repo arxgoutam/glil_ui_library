@@ -1,11 +1,12 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./src/css/style.css">
-    <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="../src/css/style.css">
+    <link rel="stylesheet" href="../style/main.css">
 </head>
 <body>
     <div class="nav">
@@ -41,27 +42,75 @@
             </div>
         </div>
     </div>
-    <div class="hero-section">
-        <div class="container">
-            <div class="get-start-btn">
-                <a href="">Get Start With ARXCOMPO</a>
-            </div>
-            <div class="logo-hero">
-                <img width="220" src="./assets/images/bootstrap-logo-shadow.png" alt="">
-            </div>
-            <div class="title-box">
-                <h1 class="title">Build fast, responsive sites with ArxCompo</h1>
-                <p class="sub-title">Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins.</p>
-            </div>
-
-            <div>
-                <div>
-                    <div class="bd-code-snippet">  <div class="bd-clipboard">    <button type="button" class="btn-clipboard" title="">      <svg class="bi" role="img" aria-label="Copy"><use xlink:href="#clipboard"></use></svg>    </button>  </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">npm i bootstrap@5.3.3</span></span></code></pre></div></div>
+    <div class="docs-page">
+        <div class="container docs-page-container">
+            <div class="sidebar-menu">
+                <div class="sidebar-menu-items">
+                    <div class="sidebar-menu-header">
+                        <button class="toggle-button">Getting Started</button>
+                    </div>
+                    <div class="sidebar-menu-list hidden">
+                        <ul>
+                            <li><a href="">Introduction</a></li>
+                            <li><a href="">Layout</a></li>
+                            <li><a href="">Content</a></li>
+                            <li><a href="">Components</a></li>
+                            <li><a href="">Utilities</a></li>
+                            <li><a href="">Extend</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sidebar-menu-items">
+                    <div class="sidebar-menu-header">
+                        <button class="toggle-button">Getting Started</button>
+                    </div>
+                    <div class="sidebar-menu-list hidden">
+                        <ul>
+                            <li><a href="">Introduction</a></li>
+                            <li><a href="">Layout</a></li>
+                            <li><a href="">Content</a></li>
+                            <li><a href="">Components</a></li>
+                            <li><a href="">Utilities</a></li>
+                            <li><a href="">Extend</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sidebar-menu-items">
+                    <div class="sidebar-menu-header">
+                        <button class="toggle-button">Getting Started</button>
+                    </div>
+                    <div class="sidebar-menu-list hidden">
+                        <ul>
+                            <li><a href="">Introduction</a></li>
+                            <li><a href="">Layout</a></li>
+                            <li><a href="">Content</a></li>
+                            <li><a href="">Components</a></li>
+                            <li><a href="">Utilities</a></li>
+                            <li><a href="">Extend</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        
+            
+            <div class="content">
+                content
+            </div>
+            <div class="right-bar">
+                right bar
+            </div>
         </div>
     </div>
+    
+
+    <script>
+        // JavaScript to toggle visibility of each menu list
+        document.querySelectorAll('.toggle-button').forEach(button => {
+            button.addEventListener('click', () => {
+                const menuList = button.parentElement.nextElementSibling;
+                menuList.classList.toggle('hidden');
+            });
+        });
+    </script>
  
 </body>
 </html>

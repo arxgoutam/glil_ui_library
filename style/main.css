@@ -155,3 +155,42 @@
     margin: 2rem 0;
     width: 70%;
 }
+
+
+/* docs pages  */
+.docs-page-container{
+    position: relative;
+}
+.sidebar-menu{
+    width: 250px;
+    position: absolute;
+    background: #2bd7fd;
+    left: 0;
+    top: 0;
+}
+.right-bar{
+    width: 250px;
+    position: absolute;
+    background: #5500ff;
+    right: 0;
+    top: 0;
+}
+.content{
+    margin-left: 250px;
+    margin-right: 250px;
+    padding: 1rem;
+    background-color: #4178af;
+}
+
+    /* CSS to hide the menu list by default */
+    .hidden {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+    }
+
+    /* CSS for smooth animation when showing the menu list */
+    .sidebar-menu-list {
+        max-height: 500px; /* Adjust based on the content size */
+        transition: max-height 0.3s ease-in;
+    }
